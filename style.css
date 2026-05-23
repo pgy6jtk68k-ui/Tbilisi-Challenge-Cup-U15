@@ -43,6 +43,9 @@ h2 {
 .tournament-table .team-name {
     text-align: left;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .tournament-table tbody tr:nth-child(even) {
@@ -51,3 +54,10 @@ h2 {
 
 .top-team { background-color: #e8f5e9 !important; }
 .bottom-team { background-color: #ffebee !important; }
+
+.team-logo {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
