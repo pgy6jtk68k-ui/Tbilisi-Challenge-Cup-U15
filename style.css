@@ -1,23 +1,20 @@
-/* Container dark body element override */
-.dark-theme-body {
-    background-color: #0b111e !important; 
+body {
+    background-color: #f0f2f5;
     margin: 0;
-    padding: 20px;
+    padding: 10px; /* Gives more room on mobile screens */
 }
 
-/* ==========================================
-   OLD LIGHT STYLES (PRESERVED)
-   ========================================== */
 .table-container {
     max-width: 600px;
     margin: 20px auto;
     font-family: Arial, sans-serif;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border-radius: 10px;
-    overflow-x: auto;
+    overflow-x: auto; /* Adds sideways scrolling on phones so no columns are cut off */
+    -webkit-overflow-scrolling: touch; /* Makes scrolling smooth on iPhones */
 }
 
-.table-container h2 {
+h2 {
     text-align: center;
     background-color: #1a1a1a;
     color: white;
@@ -25,38 +22,37 @@
     padding: 20px;
 }
 
-.tournament-table-old {
+.tournament-table {
     width: 100%;
     border-collapse: collapse;
     background: #fff;
-    min-width: 500px;
+    min-width: 500px; /* Ensures the table keeps its clean shape on small screens */
 }
 
-.tournament-table-old th, .tournament-table-old td {
-    padding: 12px 8px;
+.tournament-table th, .tournament-table td {
+    padding: 12px 8px; /* Compact padding to fit data neatly */
     text-align: center;
     border-bottom: 1px solid #eee;
     font-size: 14px;
-    color: #333;
 }
 
-.tournament-table-old th {
+.tournament-table th {
     background-color: #333;
     color: white;
     font-size: 13px;
     text-transform: uppercase;
 }
 
-.tournament-table-old .team-name-old {
+.tournament-table .team-name {
     text-align: left;
     font-weight: bold;
     display: flex;
     align-items: center;
     gap: 10px;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevents team names from breaking into two lines */
 }
 
-.tournament-table-old tbody tr:nth-child(even) {
+.tournament-table tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
@@ -68,249 +64,4 @@
     height: 25px;
     object-fit: contain;
     flex-shrink: 0;
-}
-
-.version-separator {
-    margin: 60px 0;
-    border: 0;
-    height: 1px;
-    background: #1e293b;
-}
-
-/* ==========================================
-   NEW REPLICA DASHBOARD STYLES (UI EXACT MATCH)
-   ========================================== */
-.dark-dashboard-wrapper {
-    background-color: #0b111e;
-    color: #ffffff;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    box-sizing: border-box;
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-.dark-dashboard-wrapper .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #1e293b;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-}
-
-.dark-dashboard-wrapper .logo-area {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-/* Header Cup Logo Style */
-.dark-dashboard-wrapper .header-cup-logo {
-    width: 42px;
-    height: 42px;
-    object-fit: contain;
-}
-
-.dark-dashboard-wrapper .logo-text {
-    font-size: 14px;
-    font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: 0.5px;
-    color: #fff;
-}
-
-.dark-dashboard-wrapper .logo-text span {
-    font-size: 10px;
-    color: #94a3b8;
-    font-weight: 400;
-}
-
-.dark-dashboard-wrapper .title-area {
-    text-align: center;
-}
-
-.dark-dashboard-wrapper .title-area h1 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: #fff;
-}
-
-.dark-dashboard-wrapper .title-area p {
-    margin: 4px 0 0 0;
-    color: #94a3b8;
-    font-size: 14px;
-}
-
-.dark-dashboard-wrapper .admin-login {
-    display: flex;
-    gap: 8px;
-}
-
-.dark-dashboard-wrapper .admin-login input {
-    background-color: #020617;
-    border: 1px solid #334155;
-    color: #fff;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 12px;
-}
-
-.dark-dashboard-wrapper .admin-login button {
-    background-color: #16a34a;
-    color: white;
-    border: none;
-    padding: 6px 16px;
-    border-radius: 4px;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 12px;
-}
-
-.dark-dashboard-wrapper .dashboard-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
-}
-
-.dark-dashboard-wrapper .table-section {
-    background-color: #0f172a;
-    border: 1px solid #1e293b;
-    border-radius: 8px;
-    padding: 15px;
-}
-
-.dark-dashboard-wrapper .replica-tournament-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.dark-dashboard-wrapper .replica-tournament-table th, 
-.dark-dashboard-wrapper .replica-tournament-table td {
-    padding: 11px 8px;
-    font-size: 13px;
-    text-align: center;
-    border-bottom: 1px solid #1e293b;
-    color: #cbd5e1;
-}
-
-.dark-dashboard-wrapper .replica-tournament-table th {
-    color: #64748b;
-    font-weight: 600;
-    font-size: 11px;
-}
-
-.dark-dashboard-wrapper .text-left {
-    text-align: left !important;
-}
-
-/* Team row layout formatting matching screenshot alignment */
-.dark-dashboard-wrapper .team-name-cell {
-    text-align: left;
-    font-weight: 500;
-    color: #e2e8f0;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-/* Dashboard Team Logo Specification */
-.dark-dashboard-wrapper .replica-team-logo {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
-.dark-dashboard-wrapper .pos-gd { color: #22c55e; }
-.dark-dashboard-wrapper .neg-gd { color: #ef4444; }
-
-.dark-dashboard-wrapper .pts-col {
-    color: #22c55e;
-    font-weight: 700;
-}
-
-.dark-dashboard-wrapper .zero-pts {
-    color: #ef4444;
-    font-weight: 700;
-}
-
-.dark-dashboard-wrapper .table-legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 15px;
-    font-size: 11px;
-    color: #64748b;
-    border-top: 1px solid #1e293b;
-    padding-top: 12px;
-}
-
-.dark-dashboard-wrapper .sidebar-section {
-    background-color: #0f172a;
-    border: 1px solid #1e293b;
-    border-radius: 8px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.dark-dashboard-wrapper .sidebar-section h3 {
-    margin-top: 0;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    color: #f8fafc;
-    border-bottom: 1px solid #1e293b;
-    padding-bottom: 10px;
-}
-
-.dark-dashboard-wrapper .matches-list {
-    flex-grow: 1;
-}
-
-.dark-dashboard-wrapper .match-group {
-    margin-bottom: 18px;
-}
-
-.dark-dashboard-wrapper .match-date {
-    font-size: 11px;
-    color: #64748b;
-    margin-bottom: 8px;
-}
-
-.dark-dashboard-wrapper .match-row {
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
-    padding: 4px 0;
-    color: #cbd5e1;
-}
-
-.dark-dashboard-wrapper .match-row .score {
-    font-weight: bold;
-    color: #fbbf24;
-}
-
-.dark-dashboard-wrapper .view-all-btn {
-    background-color: #1d4ed8;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
-@media (max-width: 900px) {
-    .dark-dashboard-wrapper .dashboard-container {
-        grid-template-columns: 1fr;
-    }
-    .dark-dashboard-wrapper .main-header {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
 }
