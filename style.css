@@ -1,134 +1,231 @@
 body {
-
     background-color: #f0f2f5;
-
     margin: 0;
-
-    padding: 10px; /* Gives more room on mobile screens */
-
+    padding: 10px;
 }
-
-
 
 .table-container {
-
     max-width: 600px;
-
     margin: 20px auto;
-
     font-family: Arial, sans-serif;
-
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-
     border-radius: 10px;
-
-    overflow-x: auto; /* Adds sideways scrolling on phones so no columns are cut off */
-
-    -webkit-overflow-scrolling: touch; /* Makes scrolling smooth on iPhones */
-
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
-
-
 
 h2 {
-
     text-align: center;
-
     background-color: #1a1a1a;
-
     color: white;
-
     margin: 0;
-
     padding: 20px;
-
 }
-
-
 
 .tournament-table {
-
     width: 100%;
-
     border-collapse: collapse;
-
     background: #fff;
-
-    min-width: 500px; /* Ensures the table keeps its clean shape on small screens */
-
+    min-width: 500px;
 }
-
-
 
 .tournament-table th, .tournament-table td {
-
-    padding: 12px 8px; /* Compact padding to fit data neatly */
-
+    padding: 12px 8px;
     text-align: center;
-
     border-bottom: 1px solid #eee;
-
     font-size: 14px;
-
 }
-
-
 
 .tournament-table th {
-
     background-color: #333;
-
     color: white;
-
     font-size: 13px;
-
     text-transform: uppercase;
-
 }
-
-
 
 .tournament-table .team-name {
-
     text-align: left;
-
     font-weight: bold;
-
     display: flex;
-
     align-items: center;
-
     gap: 10px;
-
-    white-space: nowrap; /* Prevents team names from breaking into two lines */
-
+    white-space: nowrap;
 }
-
-
 
 .tournament-table tbody tr:nth-child(even) {
-
     background-color: #f9f9f9;
-
 }
-
-
 
 .top-team { background-color: #e8f5e9 !important; }
-
 .bottom-team { background-color: #ffebee !important; }
 
-
-
 .team-logo {
-
     width: 25px;
-
     height: 25px;
-
     object-fit: contain;
-
     flex-shrink: 0;
-
 }
 
+/* ==========================================================================
+   NEW WORK: TEAM SEPARATE PROFILES STYLE DESIGN
+   ========================================================================== */
+.team-link {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+.team-link:hover {
+    text-decoration: underline;
+    color: #2e7d32;
+}
+
+.team-profile-container {
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.formation-badge {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 5px 0 0 0;
+}
+
+.profile-dashboard {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.pitch-container {
+    flex: 1;
+    min-width: 320px;
+    background: #2e7d32;
+    border: 4px solid #ffffff;
+    border-radius: 8px;
+    position: relative;
+    height: 520px;
+    overflow: hidden;
+}
+
+.football-pitch {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.center-circle {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 100px; height: 100px;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.center-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 2px; height: 100%;
+    background: rgba(255,255,255,0.6);
+    transform: translate(-50%, -50%) scaleY(10);
+}
+
+.penalty-area-top {
+    position: absolute;
+    top: 0; left: 50%;
+    width: 160px; height: 70px;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-top: none;
+    transform: translateX(-50%);
+}
+
+.penalty-area-bottom {
+    position: absolute;
+    bottom: 0; left: 50%;
+    width: 160px; height: 70px;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-bottom: none;
+    transform: translateX(-50%);
+}
+
+.player-node {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.player-shirt {
+    width: 28px;
+    height: 28px;
+    background: #d32f2f;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px auto 0 auto;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.roster-sidebar {
+    width: 300px;
+}
+
+.roster-sidebar h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 8px;
+}
+
+.player-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.player-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.player-list .num {
+    background: #eee;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-weight: bold;
+    color: #333;
+}
