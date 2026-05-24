@@ -3,133 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tbilisi Challenge Cup 2025</title>
+    <title>Tbilisi Challenge Cup</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-theme-body">
 
-    <header class="main-header">
-        <div class="logo-area">
-            <div class="cup-logo">🏆</div> 
-            <div class="logo-text">TBILISI<br><span>CHALLENGE CUP</span></div>
-        </div>
-        <div class="title-area">
-            <h1>Tbilisi Challenge Cup 2025</h1>
-            <p>Group Stage Standings</p>
-        </div>
-        <div class="admin-login">
-            <input type="password" placeholder="Admin password">
-            <button>Login</button>
-        </div>
-    </header>
+    <div class="table-container">
+        <h2>🏆 Tbilisi Challenge Cup</h2>
+        <table class="tournament-table-old">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>კლუბი</th>
+                    <th>თ</th>
+                    <th>მ</th>
+                    <th>ფ</th>
+                    <th>წ</th>
+                    <th>ბურთები</th>
+                    <th>ქულა</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="top-team">
+                    <td>1</td>
+                    <td class="team-name-old"><img src="dinamo-school.png" class="team-logo"> დ.სკოლა</td>
+                    <td>9</td><td>8</td><td>1</td><td>0</td><td>38:5</td><td>25</td>
+                </tr>
+                <tr class="top-team">
+                    <td>2</td>
+                    <td class="team-name-old"><img src="norchi-dinamo.png" class="team-logo"> ნ.დინამო-მეორე</td>
+                    <td>9</td><td>7</td><td>1</td><td>1</td><td>40:12</td><td>22</td>
+                </tr>
+                <tr class="top-team">
+                    <td>3</td>
+                    <td class="team-name-old"><img src="grand-avlabari.png" class="team-logo"> გრანდ ავლაბარი</td>
+                    <td>8</td><td>6</td><td>0</td><td>2</td><td>22:14</td><td>18</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="team-name-old"><img src="ts-academy.png" class="team-logo"> თ.ს აკადემია</td>
+                    <td>7</td><td>5</td><td>1</td><td>1</td><td>22:7</td><td>16</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="team-name-old"><img src="norchi-dinamo.png" class="team-logo"> ნ.დინამო პირველი</td>
+                    <td>10</td><td>5</td><td>1</td><td>4</td><td>24:13</td><td>16</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="team-name-old"><img src="ameri.png" class="team-logo"> ამერი 2020</td>
+                    <td>8</td><td>4</td><td>1</td><td>3</td><td>16:12</td><td>13</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="team-name-old"><img src="ts-academy.png" class="team-logo"> თ.ს აკადემია პირველი</td>
+                    <td>8</td><td>3</td><td>1</td><td>4</td><td>15:15</td><td>10</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="team-name-old"><img src="sanzona.png" class="team-logo"> სანზონა</td>
+                    <td>9</td><td>3</td><td>1</td><td>5</td><td>14:30</td><td>10</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="team-name-old"><img src="tbilisi-2025.png" class="team-logo"> თბილისი 2025</td>
+                    <td>9</td><td>2</td><td>3</td><td>4</td><td>23:22</td><td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="team-name-old"><img src="gldani.png" class="team-logo"> გლდანი</td>
+                    <td>7</td><td>1</td><td>1</td><td>5</td><td>7:32</td><td>4</td>
+                </tr>
+                <tr class="bottom-team">
+                    <td>11</td>
+                    <td class="team-name-old"><img src="kvartali.png" class="team-logo"> კვარტალი</td>
+                    <td>9</td><td>1</td><td>1</td><td>7</td><td>9:39</td><td>4</td>
+                </tr>
+                <tr class="bottom-team">
+                    <td>12</td>
+                    <td class="team-name-old"><img src="sportuni.png" class="team-logo"> სპორტუნი</td>
+                    <td>9</td><td>0</td><td>0</td><td>9</td><td>1:30</td><td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <main class="dashboard-container">
-        <section class="table-section">
-            <table class="tournament-table">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th class="text-left">TEAM</th>
-                        <th>P</th>
-                        <th>W</th>
-                        <th>D</th>
-                        <th>L</th>
-                        <th>GF</th>
-                        <th>GA</th>
-                        <th>GD</th>
-                        <th>PTS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td class="team-name">ნ.დინამო - მეორე</td>
-                        <td>6</td><td>5</td><td>1</td><td>0</td><td>31</td><td>7</td><td class="pos-gd">+24</td><td class="pts-col">16</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td class="team-name">თ.ს აკადემია</td>
-                        <td>7</td><td>5</td><td>1</td><td>1</td><td>22</td><td>7</td><td class="pos-gd">+15</td><td class="pts-col">16</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td class="team-name">დ.სკოლა</td>
-                        <td>5</td><td>5</td><td>0</td><td>0</td><td>21</td><td>2</td><td class="pos-gd">+19</td><td class="pts-col">15</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td class="team-name">ნ.დინამო პირველი</td>
-                        <td>7</td><td>4</td><td>1</td><td>2</td><td>20</td><td>8</td><td class="pos-gd">+12</td><td class="pts-col">13</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td class="team-name">გრანდ ავლაბარი</td>
-                        <td>5</td><td>4</td><td>0</td><td>1</td><td>17</td><td>12</td><td class="pos-gd">+5</td><td class="pts-col">12</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td class="team-name">სანზონა</td>
-                        <td>7</td><td>3</td><td>1</td><td>3</td><td>14</td><td>19</td><td class="neg-gd">-5</td><td class="pts-col">10</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td class="team-name">თ.ს აკადემია პირველი</td>
-                        <td>6</td><td>2</td><td>1</td><td>3</td><td>9</td><td>13</td><td class="neg-gd">-4</td><td>7</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td class="team-name">ამერი 2020</td>
-                        <td>5</td><td>2</td><td>0</td><td>3</td><td>10</td><td>10</td><td>0</td><td>6</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td class="team-name">თბილისი 2025</td>
-                        <td>6</td><td>1</td><td>1</td><td>4</td><td>11</td><td>18</td><td class="neg-gd">-7</td><td>4</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td class="team-name">კვარტალი</td>
-                        <td>6</td><td>1</td><td>0</td><td>5</td><td>6</td><td>22</td><td class="neg-gd">-16</td><td>3</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td class="team-name">გლდანი</td>
-                        <td>5</td><td>1</td><td>0</td><td>4</td><td>5</td><td>25</td><td class="neg-gd">-20</td><td>3</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td class="team-name">სპორტუნი</td>
-                        <td>7</td><td>0</td><td>0</td><td>7</td><td>1</td><td>24</td><td class="neg-gd">-23</td><td class="zero-pts">0</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="table-legend">
-                <span>P - Played</span> <span>W - Wins</span> <span>D - Draws</span> <span>L - Losses</span> 
-                <span>GF - Goals For</span> <span>GA - Goals Against</span> <span>GD - Goal Difference</span> <span>PTS - Points</span>
+    <hr class="version-separator">
+
+    <div class="dark-dashboard-wrapper">
+        <header class="main-header">
+            <div class="logo-area">
+                <img src="tournament-logo.png" alt="🏆" class="header-cup-logo">
+                <div class="logo-text">TBILISI<br><span>CHALLENGE CUP</span></div>
             </div>
-        </section>
-
-        <aside class="sidebar-section">
-            <h3>RECENT MATCHES</h3>
-            <div class="matches-list">
-                <div class="match-group">
-                    <div class="match-date">10 მაისი, 2025</div>
-                    <div class="match-row"><span>სანზონა</span> <span class="score">0 - 3</span> <span>ნ.დინამო მეორე</span></div>
-                    <div class="match-row"><span>კვარტალი</span> <span class="score">0 - 6</span> <span>თ.ს აკადემია პირველი</span></div>
-                    <div class="match-row"><span>დ.სკოლა</span> <span class="score">5 - 1</span> <span>ნ.დინამო - მეორე</span></div>
-                </div>
-                <div class="match-group">
-                    <div class="match-date">5 მაისი, 2025</div>
-                    <div class="match-row"><span>თ.ს აკადემია მეორე</span> <span class="score">0 - 2</span> <span>გრანდ ავლაბარი</span></div>
-                </div>
-                <div class="match-group">
-                    <div class="match-date">2 მაისი, 2025</div>
-                    <div class="match-row"><span>თბილისი 2025</span> <span class="score">2 - 2</span> <span>დ.სკოლა</span></div>
-                    <div class="match-row"><span>გლდანი</span> <span class="score">2 - 2</span> <span>კვარტალი</span></div>
-                </div>
+            <div class="title-area">
+                <h1>Tbilisi Challenge Cup 2025</h1>
+                <p>Group Stage Standings</p>
             </div>
-            <button class="view-all-btn">View All Matches</button>
-        </aside>
-    </main>
-</body>
-</html>
+            <div class="admin-login">
+                <input type="password" placeholder="Admin password">
+                <button>Login</button>
+            </div>
+        </header>
+
+        <main class="dashboard-container">
+            <section class="table-section">
+                <table class="replica-tournament-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th class="text-left">TEAM</th>
+                            <th>P</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th>PTS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td class="team-name-cell"><img src="norchi-dinamo.png" class="replica-team-logo"> ნ.დინამო - მეორე</td><td>6</td><td>5</td><td>1</td><td>0</td><td>31</td><td>7</td><td class="pos-gd">+24</td><td class="pts-col">16</td></tr>
+                        <tr><td>2</td><td class="team-name-cell"><img src="ts-academy.png" class="replica-team-logo"> თ.ს აკადემია</td><td>7</td><td>5</td><td>1</td><td>1</td><td>22</td><td>7</td><td class="pos-gd">+15</td><td class="pts-col">16</td></tr>
+                        <tr><td>3</td><td class="team-name-cell"><img src="dinamo-school.png" class="replica-team-logo"> დ.სკოლა</td><td>5</td><td>5</td><td>0</td><td>0</td><td>21</td><td>2</td><td class="pos-gd">+19</td><td class="pts-col">15</td></tr>
+                        <tr><td>4</td><td class="team-name-cell"><img src="norchi-dinamo.png" class="replica-team-logo"> ნ.დინამო პირველი</td><td>7</td><td>4</td><td>1</td><td>2</td><td>20</td><td>8</td><td class="pos-gd">+12</td><td class="pts-col">13</td></tr>
+                        <tr><td>5</td><td class="team-name-cell"><img src="grand-avlabari.png" class="replica-team-logo"> გრანდ ავლაბარი</td><td>5</td><td>4</td><td>0</td><td>1</td><td>17</td><td>12</td><td class="pos-gd">+5</td><td class="pts-col">12</td></tr>
+                        <tr><td>6</td><td class="team-name-cell"><img src="sanzona.png" class="replica-team-logo"> სანზონა</td><td>7</td><td>3</td><td>1</td><td>3</td><td>14</td><td>19</td><td class="neg-gd">-5</td><td class="pts-col">10</td></tr>
+                        <tr><td>7</td><td class="team-name-cell"><img src="ts-academy.png" class="replica-team-logo"> თ.ს აკადემია პირველი</td><td>6</td><td>2</td><td>1</td><td>3</td><td>9</td><td>13</td><td class="neg-gd">-4</td><td>7</td></tr>
+                        <tr><td>8</td><td class="team-name-cell"><img src="ameri.png" class="replica-team-logo"> ამერი 2020</td><td>5</td><td>2</td><td>0</td><td>3</td><td>10</td><td>10</td><td>0</td><td>6</td></tr>
+                        <tr><td>9</td><td class="team-name-cell"><img src="tbilisi-2025.png" class="replica-team-logo"> თბილისი 2025</td><td>6</td><td>1</td><td>1</td><td>4</td><td>11</td><td>18</td><td class="neg-gd">-7</td><td>4</td></tr>
+                        <tr><td>10</td><td class="team-name-cell"><img src="kvartali.png" class="replica-team-logo"> კვარტალი</td><td>6</td><td>1</td><td>0</td><td>5</td><td>6</td><td>22</td><td class="neg-gd">-16</td><td>3</td></tr>
+                        <tr><td>11</td><td class="team-name-cell"><img src="gldani.png" class="replica-team-logo"> გლდანი</td><td>5</td><td>1</td><td>0</td><td>4</td><td>5</td><td>25</td><td class="neg-gd">-20</td><td>3</td></tr>
+                        <tr><td>12</td><td class="team-name-cell"><img src="sportuni.png" class="replica-team-logo"> სპორტუნი</td><td>7</td><td>0</td><td>0</td><td>7</td><td>1</td><td>24</td><td class="neg-gd">-23</td><td class="zero-pts">0</td></tr>
+                    </tbody>
+                </table>
+                <div class="table-legend">
+                    <span>P - Played</span> <span>W - Wins</span> <span>D - Draws</span> <span>L - Losses</span> 
+                    <span>GF - Goals For</span> <span>GA - Goals Against</span> <span>GD - Goal Difference</span> <span>PTS - Points</span>
+                </div>
+            </section>
+
+            <aside class="sidebar-section">
+                <h3>RECENT MATCHES</h3>
+                <div class="matches-list">
+                    <div class="match-group">
+                        <div class="match-date">10 მაისი, 2025</div>
+                        <div class="match-row"><span>სანზონა</span> <span class="score">0 - 3</span> <span>ნ.დინამო მეორე</span></div>
+                        <div class="match-row"><span>კვარტალი</span> <span class="score">0 - 6</span> <span>თ.ს აკადემია პირველი</span></div>
+                        <div class="match-row"><span>დ.სკოლა</span> <span class="score">5 - 1</span> <span>ნ.დინამო - მეორე</span></div>
