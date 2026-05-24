@@ -1,15 +1,95 @@
-/* Base Layout & Color Palette Setup */
-body {
+/* Container dark body element override */
+.dark-theme-body {
+    background-color: #0b111e !important; 
+    margin: 0;
+    padding: 20px;
+}
+
+/* ==========================================
+   OLD LIGHT STYLES (PRESERVED)
+   ========================================== */
+.table-container {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.table-container h2 {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.tournament-table-old {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    min-width: 500px;
+}
+
+.tournament-table-old th, .tournament-table-old td {
+    padding: 12px 8px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+}
+
+.tournament-table-old th {
+    background-color: #333;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.tournament-table-old .team-name-old {
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.tournament-table-old tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.top-team { background-color: #e8f5e9 !important; }
+.bottom-team { background-color: #ffebee !important; }
+
+.team-logo {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.version-separator {
+    margin: 60px 0;
+    border: 0;
+    height: 1px;
+    background: #1e293b;
+}
+
+/* ==========================================
+   NEW REPLICA DASHBOARD STYLES (UI EXACT MATCH)
+   ========================================== */
+.dark-dashboard-wrapper {
     background-color: #0b111e;
     color: #ffffff;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
     box-sizing: border-box;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
-/* Header Area */
-.main-header {
+.dark-dashboard-wrapper .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,53 +98,57 @@ body {
     margin-bottom: 25px;
 }
 
-.logo-area {
+.dark-dashboard-wrapper .logo-area {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
-.cup-logo {
-    font-size: 28px;
+/* Header Cup Logo Style */
+.dark-dashboard-wrapper .header-cup-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
 }
 
-.logo-text {
+.dark-dashboard-wrapper .logo-text {
     font-size: 14px;
     font-weight: 800;
     line-height: 1.1;
     letter-spacing: 0.5px;
+    color: #fff;
 }
 
-.logo-text span {
+.dark-dashboard-wrapper .logo-text span {
     font-size: 10px;
     color: #94a3b8;
     font-weight: 400;
 }
 
-.title-area {
+.dark-dashboard-wrapper .title-area {
     text-align: center;
 }
 
-.title-area h1 {
+.dark-dashboard-wrapper .title-area h1 {
     margin: 0;
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 0.5px;
+    color: #fff;
 }
 
-.title-area p {
+.dark-dashboard-wrapper .title-area p {
     margin: 4px 0 0 0;
     color: #94a3b8;
     font-size: 14px;
 }
 
-/* Admin Login Styles */
-.admin-login {
+.dark-dashboard-wrapper .admin-login {
     display: flex;
     gap: 8px;
 }
 
-.admin-login input {
+.dark-dashboard-wrapper .admin-login input {
     background-color: #020617;
     border: 1px solid #334155;
     color: #fff;
@@ -73,7 +157,7 @@ body {
     font-size: 12px;
 }
 
-.admin-login button {
+.dark-dashboard-wrapper .admin-login button {
     background-color: #16a34a;
     color: white;
     border: none;
@@ -84,68 +168,75 @@ body {
     font-size: 12px;
 }
 
-/* Dashboard Two-Column Grid */
-.dashboard-container {
+.dark-dashboard-wrapper .dashboard-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 30px;
-    max-width: 1300px;
-    margin: 0 auto;
 }
 
-/* Left Column: Standings Table */
-.table-section {
+.dark-dashboard-wrapper .table-section {
     background-color: #0f172a;
     border: 1px solid #1e293b;
     border-radius: 8px;
     padding: 15px;
 }
 
-.tournament-table {
+.dark-dashboard-wrapper .replica-tournament-table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.tournament-table th, 
-.tournament-table td {
-    padding: 10px 8px;
+.dark-dashboard-wrapper .replica-tournament-table th, 
+.dark-dashboard-wrapper .replica-tournament-table td {
+    padding: 11px 8px;
     font-size: 13px;
     text-align: center;
     border-bottom: 1px solid #1e293b;
+    color: #cbd5e1;
 }
 
-.tournament-table th {
+.dark-dashboard-wrapper .replica-tournament-table th {
     color: #64748b;
     font-weight: 600;
     font-size: 11px;
 }
 
-.text-left {
+.dark-dashboard-wrapper .text-left {
     text-align: left !important;
 }
 
-.tournament-table td.team-name {
+/* Team row layout formatting matching screenshot alignment */
+.dark-dashboard-wrapper .team-name-cell {
     text-align: left;
     font-weight: 500;
     color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-/* Color codes matching UI screenshots */
-.pos-gd { color: #22c55e; }
-.neg-gd { color: #ef4444; }
+/* Dashboard Team Logo Specification */
+.dark-dashboard-wrapper .replica-team-logo {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
 
-.pts-col {
+.dark-dashboard-wrapper .pos-gd { color: #22c55e; }
+.dark-dashboard-wrapper .neg-gd { color: #ef4444; }
+
+.dark-dashboard-wrapper .pts-col {
     color: #22c55e;
     font-weight: 700;
 }
 
-.zero-pts {
+.dark-dashboard-wrapper .zero-pts {
     color: #ef4444;
     font-weight: 700;
 }
 
-/* Footer / Legend inside the Table card */
-.table-legend {
+.dark-dashboard-wrapper .table-legend {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -156,8 +247,7 @@ body {
     padding-top: 12px;
 }
 
-/* Right Sidebar: Recent Matches */
-.sidebar-section {
+.dark-dashboard-wrapper .sidebar-section {
     background-color: #0f172a;
     border: 1px solid #1e293b;
     border-radius: 8px;
@@ -166,7 +256,7 @@ body {
     flex-direction: column;
 }
 
-.sidebar-section h3 {
+.dark-dashboard-wrapper .sidebar-section h3 {
     margin-top: 0;
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -175,21 +265,21 @@ body {
     padding-bottom: 10px;
 }
 
-.matches-list {
+.dark-dashboard-wrapper .matches-list {
     flex-grow: 1;
 }
 
-.match-group {
+.dark-dashboard-wrapper .match-group {
     margin-bottom: 18px;
 }
 
-.match-date {
+.dark-dashboard-wrapper .match-date {
     font-size: 11px;
     color: #64748b;
     margin-bottom: 8px;
 }
 
-.match-row {
+.dark-dashboard-wrapper .match-row {
     display: flex;
     justify-content: space-between;
     font-size: 13px;
@@ -197,12 +287,12 @@ body {
     color: #cbd5e1;
 }
 
-.match-row .score {
+.dark-dashboard-wrapper .match-row .score {
     font-weight: bold;
-    color: #fbbf24; /* Gold/Yellow score accent */
+    color: #fbbf24;
 }
 
-.view-all-btn {
+.dark-dashboard-wrapper .view-all-btn {
     background-color: #1d4ed8;
     color: white;
     border: none;
@@ -212,19 +302,13 @@ body {
     font-weight: 600;
     cursor: pointer;
     margin-top: 15px;
-    transition: background 0.2s;
 }
 
-.view-all-btn:hover {
-    background-color: #2563eb;
-}
-
-/* Responsive adjustments for smaller windows/tablets */
 @media (max-width: 900px) {
-    .dashboard-container {
+    .dark-dashboard-wrapper .dashboard-container {
         grid-template-columns: 1fr;
     }
-    .main-header {
+    .dark-dashboard-wrapper .main-header {
         flex-direction: column;
         gap: 15px;
         text-align: center;
