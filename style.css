@@ -1,67 +1,134 @@
 body {
+
     background-color: #f0f2f5;
+
     margin: 0;
+
     padding: 10px; /* Gives more room on mobile screens */
+
 }
+
+
 
 .table-container {
+
     max-width: 600px;
+
     margin: 20px auto;
+
     font-family: Arial, sans-serif;
+
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
     border-radius: 10px;
+
     overflow-x: auto; /* Adds sideways scrolling on phones so no columns are cut off */
+
     -webkit-overflow-scrolling: touch; /* Makes scrolling smooth on iPhones */
+
 }
+
+
 
 h2 {
+
     text-align: center;
+
     background-color: #1a1a1a;
+
     color: white;
+
     margin: 0;
+
     padding: 20px;
+
 }
+
+
 
 .tournament-table {
+
     width: 100%;
+
     border-collapse: collapse;
+
     background: #fff;
+
     min-width: 500px; /* Ensures the table keeps its clean shape on small screens */
+
 }
+
+
 
 .tournament-table th, .tournament-table td {
+
     padding: 12px 8px; /* Compact padding to fit data neatly */
+
     text-align: center;
+
     border-bottom: 1px solid #eee;
+
     font-size: 14px;
+
 }
+
+
 
 .tournament-table th {
+
     background-color: #333;
+
     color: white;
+
     font-size: 13px;
+
     text-transform: uppercase;
+
 }
+
+
 
 .tournament-table .team-name {
+
     text-align: left;
+
     font-weight: bold;
+
     display: flex;
+
     align-items: center;
+
     gap: 10px;
+
     white-space: nowrap; /* Prevents team names from breaking into two lines */
+
 }
+
+
 
 .tournament-table tbody tr:nth-child(even) {
+
     background-color: #f9f9f9;
+
 }
+
+
 
 .top-team { background-color: #e8f5e9 !important; }
+
 .bottom-team { background-color: #ffebee !important; }
 
+
+
 .team-logo {
+
     width: 25px;
+
     height: 25px;
+
     object-fit: contain;
+
     flex-shrink: 0;
+
 }
+
